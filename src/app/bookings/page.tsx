@@ -23,7 +23,7 @@ export default function BookingForm() {
     setMessage('Sending...');
 
     try {
-      const res = await fetch('www.doctorapp.rf.gd/tuktuk/api/bookings.php', {
+      const res = await fetch('https://www.doctorapp.rf.gd/tuktuk/api/bookings.php', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),
